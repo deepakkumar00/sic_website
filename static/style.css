@@ -1,0 +1,80 @@
+
+.foot{
+    position: fixed;
+    left: 0;
+    bottom: 0;
+    width: 100%;
+    background-color: #3f3f3f;
+    color: white;
+    padding: 10px;
+}
+
+.foot-header{
+    font-family: 'Roboto', sans-serif;
+    font-weight: 700;
+    font-size: large;
+    padding-bottom: 5px;
+    position: relative;
+}
+
+
+.foot-header::after {
+    background-color: #efefef; 
+    bottom: 0;
+    content: '';
+    display: block;
+    height: 2px;
+    left: 5%;
+    position: absolute;
+    transform: translate(-50%,0);
+    width: 50px;
+}
+
+.foot-content{
+    font-family: 'Roboto', sans-serif;
+    font-weight: 300;
+    font-size: medium;
+}
+
+.lnk-wht{
+    color: white;
+    text-decoration: none;
+}
+
+.upper-foot{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+}
+
+#lower-foot{
+    display: flex;
+    padding: 5px;
+    flex-direction: row;
+    font-family: 'Roboto', sans-serif;
+    font-weight: 400;
+    font-size: medium;
+    justify-content: space-around;
+    align-items: center;
+    border-top: 0.3px dashed rgba(255, 255, 255, 0.472);
+}
+.icons{
+    font-size: x-large;
+    padding: 5px;
+    text-decoration: none;
+    color: white;
+}
+
+@media only screen and (max-width: 600px) {
+    #lower-foot{
+      flex-direction: column;
+    }
+    #social{
+        border-bottom: 0.3px dashed rgba(255, 255, 255, 0.472);
+    }
+  }
+  @media only screen and (max-width: 950px) {
+    .upper-foot{
+        flex-direction: column;
+      }
+  }
