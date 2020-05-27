@@ -56,7 +56,7 @@
     font-size: medium;
     justify-content: space-around;
     align-items: center;
-    border-top: 0.3px dashed rgba(255, 255, 255, 0.472);
+    border-top: 0.3px dashed rgba(255, 255, 255, 1);
 }
 .icons{
     font-size: x-large;
@@ -70,7 +70,7 @@
       flex-direction: column;
     }
     #social{
-        border-bottom: 0.3px dashed rgba(255, 255, 255, 0.472);
+        border-bottom: 0.3px dashed rgba(255, 255, 255, 1);
     }
   }
   @media only screen and (max-width: 950px) {
