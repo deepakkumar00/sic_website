@@ -5,16 +5,73 @@
         <link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css" integrity="sha384-AYmEC3Yw5cVb3ZcuHtOA93w35dYTsvhLPVnYs9eStHfGJvOvKxVfELGroGkvsg+p" crossorigin="anonymous"/>
         <!-- Bootstrap CSS -->
         <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css" integrity="sha384-9aIt2nRpC12Uk9gS9baDl411NQApFmC26EwAOH8WgZl5MYYxFfc+NcPb1dKGj7Sk" crossorigin="anonymous">
-
+        <style>
+            .navcolor {
+                background-color: dodgerblue;
+            }
+        </style>
     </head>
     <body>
+        <section>
+            <div class="header" id="top">
+                <div class="container">
+                    <div class="row">
+                        <div class="col-lg-6 col-sm-6">
+                            <img class="img-fluid logo" src="static/images/final logo.jpg" />
+                        </div>
+                        <div class="col-lg-6 ">
+                     <img class="img-fluid" src="static/images/feedback.png" style="width:45px; height:55px; padding-top:10px; float:right;"/>
+                     <img class="img-fluid" src="static/images/location.png" title="Location" style="width:45px; height:55px; padding-top:10px; float:right;"/>
+                     <img class="img-fluid" src="static/images/mail.png" title="Mail Us" style="width:45px; height:55px; padding-top:10px; float:right;"/>
+                  </div>
+                    </div>
+                </div>
+            </div>
 
         <!--Navigation Menu-->
         <nav>
-            this is navigation
+            <div class="navcolor">
+                <div class="container">
+                    <nav class="navbar navbar-expand-sm navbar-dark navcolor ">
+                        <button type="button" class="navbar-toggler" data-target="#my" data-toggle="collapse"><span class="navbar-toggler-icon"></span></button>
+
+                        <div class="navbar-collapse collapse" id="my">
+                            <ul class="navbar-nav">
+                                <li class="nav-item"><a href="#" class="nav-link active"><span class="fa fa-home"></span>Home</a></li>
+                                <li class="nav-item"><a class="nav-link active" href="#"><span class="fa fa-edit"></span>About Us</a></li>
+                                <li class="nav-item dropdown"><a class="dropdown-toggle nav-link" data-toggle="dropdown" href="#"><span class="fa fa-newspaper-o"></span>Prospectus<span class="caret"></span></a>
+                                <ul class="dropdown-menu bg-success">
+                                <li><a class="text-light text-center" href="#">Fee Structure</a></li>
+                                <li><div class="dropdown-divider"></div></li>
+                                <li><a class="text-light text-center" href="#">School Uniform</a></li>
+                                </ul>
+                                </li>
+                                <li class="nav-item"><a class="nav-link" href="#"><span class="fa fa-address-card-o"></span>Admission</a></li>
+                                <li class="nav-item dropdown"><a class="nav-link dropdown-toggle" data-toggle="dropdown" href="#"><span class="fa fa-black-tie"></span>Office Holders<span class="caret"></span></a>
+                                <ul class="dropdown-menu bg-danger">
+                                <li><a class="text-light text-center" href="#">Teaching Staff</a></li>
+                                <li><div class="dropdown-divider"></div></li>
+                                <li><a class="text-light text-center" href="#">Head Boy/Head Girl</a></li>
+                                </ul>
+                                </li>
+                                <li class="nav-item"><a class="nav-link" href="#"><span class="fa fa-envelope"></span>Message</a></li>
+                                <li class="nav-item dropdown"><a class="nav-link dropdown-toggle" data-toggle="dropdown" href="#"><span class="fa fa-photo"></span>Gallery<span class="caret"></span></a>
+                                <ul class="dropdown-menu bg-info">
+                                <li><a class="text-light text-center" href="#">Photo Gallery</a></li>
+                                <li><div class="dropdown-divider"></div></li>
+                                <li><a class="text-light text-center" href="#">Video Gallery</a></li>
+                                </ul>
+                                </li>
+                                <li class="nav-item"><a class="nav-link" href="#"><span class="fa fa-graduation-cap"></span>Alumini</a></li>
+                                <li class="nav-item"><a class="nav-link" href="#"><span class="fa fa-phone"></span>Contact Us</a></li>
+                            </ul>
+                        </div>
+                    </nav>
+                </div>
+            </div>
         </nav>
         
-
+    </section>
         {% block content %}{% endblock %}
 
         <!--Footer starts here-->
