@@ -1,0 +1,46 @@
+{% extends "index.html"%}
+{% block title %} Gallery | SIC {% endblock%}
+{% block content %}
+<div class="container">
+<div class="row mt-5 center" >
+  <div class="col-md-4">
+    <div class="img-rounded">
+      <a href="static/images/Sarvoday.jpg" target="_blank">
+        <img src="static/images/Sarvoday.jpg" alt="Lights" style="width:100%">
+      </a>
+    </div>
+  </div>
+  <div class="col-md-4">
+    <div class="img-rounded">
+      <a href="static/images/sic.jpg" target="_blank">
+        <img src="static/images/sic.jpg" alt="Nature" style="width:100%">
+      </a>
+    </div>
+  </div>
+  <div class="col-md-4">
+    <div class="img-rounded">
+      <a href="static/images/side.jpg" target="_blank">
+        <img src="static/images/side.jpg" alt="Fjords" style="width:100%">
+      </a>
+    </div>
+  </div>
+</div>
+</div>
+<script>
+    window.onscroll = function() {myFunction()};
+    
+    var navbar = document.getElementById("navba");
+    var sticky = navbar.offsetTop;
+    
+    function myFunction() {
+      if (window.pageYOffset >= sticky) {
+        navbar.classList.remove("parent");
+      } else {
+        navbar.classList.remove("parent");
+      }
+    }
+    </script>
+
+
+
+{% endblock%}

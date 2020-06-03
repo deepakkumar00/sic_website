@@ -14,5 +14,13 @@ def contact_us():
 def first():
     return render_template("first.html")
 
+@app.route('/gallery')
+def gallery():
+    return render_template('gallery.html')
+
+@app.route('/background')
+def background():
+    return render_template('background.html')
+
 if __name__ == '__main__':
     app.run(debug=True)
