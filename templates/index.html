@@ -9,7 +9,7 @@
       <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css" integrity="sha384-9aIt2nRpC12Uk9gS9baDl411NQApFmC26EwAOH8WgZl5MYYxFfc+NcPb1dKGj7Sk" crossorigin="anonymous">
     <link rel="stylesheet" href="static/style.css">
     </head>
-    <body>
+    <body onload="hide_search(x)">
         <section>
             <div class="header">
                 <div class="container">
@@ -91,7 +91,7 @@
                     <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
                       <span class="navbar-toggler-icon"></span>
                     </button>
-                    <form>
+                    <form id="mob_search">
                       <div class="input-group input-group-lg">
                         <input type="text" class="form-control input-sm" id="inputsm" placeholder="Search">
                         <div class="input-group-btn">
@@ -296,6 +296,16 @@
                   navbar.classList.remove("sticky");
                 }
               }
+              function hide_search(x){
+                if (x.matches) { // If media query matches
+                  document.getElementById("mob_search").remove();
+                } else {
+                  document.getElementById("mob_search").add();
+                }
+              }
+              var x = window.matchMedia("(max-width: 400px)");
+              hide_search(x)
+              x.addListener(hide_search);
               </script>
       </body>
   </html>
