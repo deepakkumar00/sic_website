@@ -12,7 +12,7 @@ def contact_us():
 
 @app.route('/first')
 def first():
-    return render_template("first.html")
+    return render_template("footer.html")
 
 if __name__ == '__main__':
     app.run(debug=True)
