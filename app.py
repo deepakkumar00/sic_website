@@ -11,9 +11,9 @@ def home():
 def contact_us():
     return render_template("contact.html")
 
-@app.route('/first')
+@app.route('/login')
 def first():
-    return render_template("footer.html")
+    return render_template("login.html")
 
 @app.route('/gallery')
 def gallery():

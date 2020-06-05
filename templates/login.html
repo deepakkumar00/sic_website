@@ -1,20 +1,24 @@
+
 <html>
     <head>
-
-        <link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css" integrity="sha384-AYmEC3Yw5cVb3ZcuHtOA93w35dYTsvhLPVnYs9eStHfGJvOvKxVfELGroGkvsg+p" crossorigin="anonymous"/>
-
         <!-- Required meta tags -->
         <meta charset="utf-8">
         <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
 
         <!-- Bootstrap CSS -->
         <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css" integrity="sha384-9aIt2nRpC12Uk9gS9baDl411NQApFmC26EwAOH8WgZl5MYYxFfc+NcPb1dKGj7Sk" crossorigin="anonymous">
+   
+        <link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css" integrity="sha384-AYmEC3Yw5cVb3ZcuHtOA93w35dYTsvhLPVnYs9eStHfGJvOvKxVfELGroGkvsg+p" crossorigin="anonymous"/>
+        <link rel="icon" type="image/png" href="{{ url_for('static', filename='images/logo.png') }}">
+
     </head>
-    <body>
+    <body style="display: flex; align-items: center; flex-direction: column; justify-content: center;">
        <!--style="display: flex; align-items: center; flex-direction: column; justify-content: center;"-->
 
-        <h1 class="mb-3">Admin Login</h1>
-            <div class=" container card p-5 w-25 shadow rounded">
+        <img src="../static/images/logo.png" height="100px">
+        <h2 class="mt-1 pt-1" style="text-transform: uppercase;">  Sarvoday Inter College, Jayanti</h2>
+            <div class="m-md-none container card m-3 py-2 px-5 w-25 shadow rounded">
+                <h1 class="mb-3 text-center">Admin Login</h1>
                 <form action="" class="">
                 <div class="form-group">
                     <label for="exampleInputEmail1">Email address</label>
@@ -31,11 +35,9 @@
                 <button type="submit" class="btn btn-primary w-50">Submit</button>
                 </form>
             </div>
-            <h2 class="mt-5 pt-5" style="text-transform: uppercase;"> <img src="../static/images/logo.png" height="75px"> Sarvoday Inter College, Jayanti</h2>
 
-            <footer class="blog-footer">
-                <p>hello</p>
-            </footer>
+            <a class="m-5 p-5" href="/"><i class="fas fa-arrow-left"></i> Back to Home</a>
+            
 
         <!-- Optional JavaScript -->
         <!-- jQuery first, then Popper.js, then Bootstrap JS -->
