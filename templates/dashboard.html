@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <link rel="shortcut icon" href="{{ url_for('static', filename='images/logo.png') }}" type="image/x-icon">
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/dashboard.css') }}">
+    <title>Dashboard-Home</title>
+</head>
+<body>
+
+    <div class="sidenav" id="sidenav">
+        <h1>Dashboard</h1>
+        <a href="#">All Posts</a>
+        <a href="{{ url_for('add_post') }}">Add Post</a>
+    </div>
+
+    <div class="main" id="main">
+        {% block content %}{% endblock content %}
+    </div>
+
+</body>
+</html>

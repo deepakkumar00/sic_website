@@ -1,0 +1,20 @@
+{% extends 'dashboard.html' %}
+
+{% block content %}
+
+    <div>
+        <form action="" method="post">
+            <legend>Add Post</legend>
+            {{ form.hidden_tag() }}
+            <div>
+                {{ form.title.label }}
+                {{ form.title }}
+            </div>
+            <div>
+                {{ form.content }}
+            </div>
+            {{ form.submit }}
+        </form>
+    </div>
+
+{% endblock content %}
